@@ -1,0 +1,1 @@
+docker build -t mt-rose-lift-checker .

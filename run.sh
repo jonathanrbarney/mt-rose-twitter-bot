@@ -1,0 +1,1 @@
+docker run --env-file .env -v `pwd`/vpn_configs:/app/vpn_configs --rm -it --name mt-rose-lift-checker mt-rose-lift-checker

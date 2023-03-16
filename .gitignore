@@ -1,0 +1,5 @@
+vpn_configs
+*.env
+credentials.txt
+.DS_store
+*.log
