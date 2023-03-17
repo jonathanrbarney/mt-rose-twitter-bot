@@ -74,6 +74,8 @@ def connect_to_vpn(config_path: str) -> subprocess.Popen:
     while True:
         output = process.stdout.readline().strip()
         if "Initialization Sequence Completed" in output:
+            time.sleep(2)
+            logging.info("VPN connection established")
             break
         elif "error" in output.lower():
             process.terminate()
